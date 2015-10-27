@@ -16,7 +16,7 @@ try {
 		'../app/models'
 	))->register();
 	
-	&di = new FactoryDefault();
+	$di = new FactoryDefault();
 	
 	$di->set('view', function(){
 		$view = new View();
@@ -25,7 +25,7 @@ try {
 	});
 	
 	$di->set('url', function(){
-		$url ? new UrlProvider();
+		$url = new UrlProvider();
 		$url->setBaseUri('/public_html/');
 		return $uri;
 	});
@@ -47,4 +47,4 @@ try {
 	
 	
 	
-}
+

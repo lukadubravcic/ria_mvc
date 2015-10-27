@@ -7,6 +7,6 @@ class IndexController extends Controller
 	
 	public function indexAction()
 	{
-		echo "<h1 align='center'>Hello</h1>;
+		echo "<h1>Hello</h1>";
 	}
 }
