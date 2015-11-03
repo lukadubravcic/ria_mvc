@@ -2,7 +2,7 @@
 
 use Phalcon\Mvc\Model;
 
-class ScanDir extends DOMNodeList
+class ScanDir extends Model
 {
 
     public function getDir()
