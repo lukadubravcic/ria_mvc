@@ -10,6 +10,7 @@ class FilesController extends Controller
 		$this->view->disable();
 		$this->response->setContentType('application/json', 'UTF-8');
 		$this->response->setContent(json_encode(ScanDir::GetDir()));
+		$this->response->send();
 
 	}
 }
